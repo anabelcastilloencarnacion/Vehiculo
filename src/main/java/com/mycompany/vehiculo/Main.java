@@ -10,9 +10,9 @@ public class Main {
         Vehiculo v2 = new Vehiculo("A12345");
 
         Vehiculo v3 = new Vehiculo(
-                "B67890",
-                "Toyota",
-                "Corolla"
+                "B670",
+                "Mazda",
+                "Kia"
         );
 
         System.out.println("=== Vehiculo 1 ===");

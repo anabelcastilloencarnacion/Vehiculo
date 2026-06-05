@@ -8,16 +8,16 @@ public class Vehiculo {
 
     // Constructor por defecto
     public Vehiculo() {
-        placa = "Sin placa";
-        marca = "Toyota";
-        modelo = "corolla";
+        placa = "A1234567";
+        marca = "Mazda";
+        modelo = "KIA";
     }
 
     // Constructor básico
     public Vehiculo(String placa) {
         this.placa = placa;
-        this.marca = "Audi";
-        this.modelo = "AudiR8";
+        this.marca = "Mercedes";
+        this.modelo = "BMW";
     }
 
     // Constructor completo
@@ -29,17 +29,17 @@ public class Vehiculo {
 
     // Metodo sobrecargado 1
     public double calcularMantenimiento(int km) {
-        return km * 0.10;
+        return km * 0.11;
     }
 
     // Metodo sobrecargado 2
     public double calcularMantenimiento(int km, String servicio) {
 
         if (servicio.equalsIgnoreCase("basico")) {
-            return km * 0.10 + 500;
+            return km * 0.11+ 500;
         }
 
-        return km * 0.10 + 1000;
+        return km * 0.11 + 1000;
     }
 
     // Metodo sobrecargado 3
@@ -48,13 +48,13 @@ public class Vehiculo {
         double costo;
 
         if (servicio.equalsIgnoreCase("basico")) {
-            costo = km * 0.10 + 500;
+            costo = km * 0.11 + 500;
         } else {
-            costo = km * 0.10 + 1000;
+            costo = km * 0.11 + 1000;
         }
 
         if (urgente) {
-            costo += 300;
+            costo += 600;
         }
 
         return costo;
